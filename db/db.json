@@ -66,16 +66,20 @@
       "text": "What is the capital of France?",
       "answers": [
         {
-          "text": "London"
+          "text": "London",
+          "correct": false
         },
         {
-          "text": "Berlin"
+          "text": "Berlin",
+          "correct": false
         },
         {
-          "text": "Paris"
+          "text": "Paris",
+          "correct": true
         },
         {
-          "text": "Madrid"
+          "text": "Madrid",
+          "correct": false
         }
       ],
       "questionIndex": 1
@@ -84,16 +88,20 @@
       "text": "Who invented the telephone?",
       "answers": [
         {
-          "text": "Thomas Edison"
+          "text": "Thomas Edison",
+          "correct": false
         },
         {
-          "text": "Alexander Graham Bell"
+          "text": "Alexander Graham Bell",
+          "correct": true
         },
         {
-          "text": "Nikola Tesla"
+          "text": "Nikola Tesla",
+          "correct": false
         },
         {
-          "text": "Samuel Morse"
+          "text": "Samuel Morse",
+          "correct": false
         }
       ],
       "questionIndex": 2
@@ -102,16 +110,20 @@
       "text": "What is the largest country in the world?",
       "answers": [
         {
-          "text": "United States"
+          "text": "United States",
+          "correct": false
         },
         {
-          "text": "Russia"
+          "text": "Russia",
+          "correct": true
         },
         {
-          "text": "China"
+          "text": "China",
+          "correct": false
         },
         {
-          "text": "Canada"
+          "text": "Canada",
+          "correct": false
         }
       ],
       "questionIndex": 3
@@ -120,16 +132,20 @@
       "text": "What is the smallest planet in our solar system?",
       "answers": [
         {
-          "text": "Mercury"
+          "text": "Mercury",
+          "correct": true
         },
         {
-          "text": "Venus"
+          "text": "Venus",
+          "correct": false
         },
         {
-          "text": "Mars"
+          "text": "Mars",
+          "correct": false
         },
         {
-          "text": "Jupiter"
+          "text": "Jupiter",
+          "correct": false
         }
       ],
       "questionIndex": 4
@@ -138,16 +154,20 @@
       "text": "What is the world's largest ocean?",
       "answers": [
         {
-          "text": "Indian Ocean"
+          "text": "Indian Ocean",
+          "correct": false
         },
         {
-          "text": "Atlantic Ocean"
+          "text": "Atlantic Ocean",
+          "correct": false
         },
         {
-          "text": "Arctic Ocean"
+          "text": "Arctic Ocean",
+          "correct": false
         },
         {
-          "text": "Pacific Ocean"
+          "text": "Pacific Ocean",
+          "correct": true
         }
       ],
       "questionIndex": 5
@@ -156,16 +176,20 @@
       "text": "What is the capital of Japan?",
       "answers": [
         {
-          "text": "Seoul"
+          "text": "Seoul",
+          "correct": false
         },
         {
-          "text": "Shanghai"
+          "text": "Shanghai",
+          "correct": false
         },
         {
-          "text": "Tokyo"
+          "text": "Tokyo",
+          "correct": true
         },
         {
-          "text": "Beijing"
+          "text": "Beijing",
+          "correct": false
         }
       ],
       "questionIndex": 6
@@ -174,16 +198,20 @@
       "text": "What is the highest mountain in the world?",
       "answers": [
         {
-          "text": "Mount Kilimanjaro"
+          "text": "Mount Kilimanjaro",
+          "correct": false
         },
         {
-          "text": "Mount Everest"
+          "text": "Mount Everest",
+          "correct": true
         },
         {
-          "text": "Mount Fuji"
+          "text": "Mount Fuji",
+          "correct": false
         },
         {
-          "text": "Mount Denali"
+          "text": "Mount Denali",
+          "correct": false
         }
       ],
       "questionIndex": 7
@@ -192,16 +220,20 @@
       "text": "What is the largest animal on Earth?",
       "answers": [
         {
-          "text": "Elephant"
+          "text": "Elephant",
+          "isCorrect": false
         },
         {
-          "text": "Whale"
+          "text": "Whale",
+          "isCorrect": true
         },
         {
-          "text": "Giraffe"
+          "text": "Giraffe",
+          "isCorrect": false
         },
         {
-          "text": "Hippopotamus"
+          "text": "Hippopotamus",
+          "isCorrect": false
         }
       ],
       "questionIndex": 8
@@ -210,16 +242,20 @@
       "text": "Who painted the Mona Lisa?",
       "answers": [
         {
-          "text": "Vincent van Gogh"
+          "text": "Vincent van Gogh",
+          "isCorrect": false
         },
         {
-          "text": "Michelangelo"
+          "text": "Michelangelo",
+          "isCorrect": false
         },
         {
-          "text": "Pablo Picasso"
+          "text": "Pablo Picasso",
+          "isCorrect": false
         },
         {
-          "text": "Leonardo da Vinci"
+          "text": "Leonardo da Vinci",
+          "isCorrect": true
         }
       ],
       "questionIndex": 9
@@ -228,16 +264,20 @@
       "text": "What is the capital of Brazil?",
       "answers": [
         {
-          "text": "Brasília"
+          "text": "Brasília",
+          "isCorrect": true
         },
         {
-          "text": "Rio de Janeiro"
+          "text": "Rio de Janeiro",
+          "isCorrect": false
         },
         {
-          "text": "São Paulo"
+          "text": "São Paulo",
+          "isCorrect": false
         },
         {
-          "text": "Belo Horizonte"
+          "text": "Belo Horizonte",
+          "isCorrect": false
         }
       ],
       "questionIndex": 10
