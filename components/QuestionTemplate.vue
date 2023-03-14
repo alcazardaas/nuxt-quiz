@@ -2,7 +2,7 @@
   <div>
     <div>
       <div class="question-container" v-for="(question, index) in questions" :key="question.id">
-        <p>{{ question.question }}</p>
+        <p class="heading">{{ question.question }}</p>
         <div v-for="(answer, answerIndex) in question.answers" :key="answerIndex">
           <input type="radio" :id="'answer-' + index + '-' + answerIndex" :name="'answer-' + index" :value="answer.answer"
             v-model="selected[index]">
@@ -73,10 +73,11 @@ export default {
 
 <style lang="less">
 .question-container {
-  background: white;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   padding: 1em;
-  margin: 1em 0;
+  margin: 1em;
 
   @media screen and (min-width: 768px) {
     margin: 1em 10em;
@@ -85,6 +86,15 @@ export default {
   @media screen and (min-width: 1440px) {
     margin: 1em 25em;
   }
+
+  .heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+  }
+
 
   div {
     display: flex;
@@ -130,5 +140,4 @@ button[type="submit"] {
   cursor: pointer;
   font-size: 16px;
   font-weight: bold;
-}
-</style>
+}</style>

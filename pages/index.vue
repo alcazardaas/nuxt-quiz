@@ -73,19 +73,31 @@ html {
       }
 
       .foreground {
-        width: 75%;
+        opacity: 0.9;
+        height: 319px;
+        width: 322px;
         transform: translateZ(-5px) scale(1.5);
 
+        @media screen and (min-width: 768px) {
+          height: 623px;
+          width: 677px;
+        }
+
         @media screen and (min-width: 1200px) {
-          width: 67%;
+          height: 835px;
+          width: 847px;
         }
       }
     }
 
     .title {
-      font-size: 7rem;
+      font-size: 3rem;
       color: #fff;
       text-shadow: 0 0 5px #000;
+
+      @media screen and (min-width: 768px) {
+        font-size: 7rem;
+      }
     }
   }
 }
