@@ -11,7 +11,6 @@
 </template>
 
 <script>
-import axios from 'axios'
 import LoaderComponent from './LoaderComponent.vue'
 
 export default {
@@ -40,12 +39,12 @@ export default {
     getGradeComparisonBetterThan() {
       const total = this.generalGrades.length
       const betterThan = this.generalGrades.filter(grade => grade.grade < this.score).length
-      return Math.round((betterThan / total) * 100)+'%'
+      return Math.round((betterThan / total) * 100) + '%'
     },
   },
   async created() {
     try {
-      const response = await axios.get('http://localhost:3001/records');
+      const response = await this.$axios.get('http://localhost:3001/records');
       this.generalGrades = response.data;
     } catch (error) {
       console.error(error);
@@ -79,12 +78,12 @@ export default {
   }
 
   .score {
-    background-color: #ccc;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     padding: 20px;
     font-size: 36px;
     text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     margin: 1em;
   }
 }

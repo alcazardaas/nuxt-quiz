@@ -16,7 +16,6 @@
 </template>
 
 <script>
-import axios from 'axios'
 import ModalScore from './ModalScore.vue'
 
 export default {
@@ -25,6 +24,10 @@ export default {
       type: Array,
       required: true,
     },
+    scrollTop: {
+      type: Function,
+      required: true
+    }
   },
   components: {
     ModalScore,
@@ -39,6 +42,7 @@ export default {
     submitQuiz() {
       this.toggleModal()
       this.sendScore()
+      this.scrollTop()
     },
     totalScore() {
       let total = 0
@@ -58,7 +62,7 @@ export default {
     },
     async sendScore() {
       try {
-        await axios.post('http://localhost:3001/records', {
+        await this.$axios.post('http://localhost:3001/records', {
           grade: this.totalScore(),
           first_name: '',
           last_name: '',
@@ -140,4 +144,5 @@ button[type="submit"] {
   cursor: pointer;
   font-size: 16px;
   font-weight: bold;
-}</style>
+}
+</style>

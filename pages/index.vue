@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="wrapper" ref="wrapper">
     <header>
       <img src="../static/waves.svg" class="background">
       <img src="../static/bubble.svg" class="foreground">
@@ -7,7 +7,7 @@
         {{ title }}
       </h1>
     </header>
-    <form-questions />
+    <form-questions @form-submitted="scrollToTop" />
   </div>
 </template>
 
@@ -25,6 +25,14 @@ export default defineComponent({
       title: 'Quiz App',
     };
   },
+  methods: {
+    scrollToTop() {
+      this.$refs.wrapper.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      })
+    }
+  }
 });
 </script>
 
