@@ -3,14 +3,12 @@
 ## Build Setup
 
 ```bash
-# DB - local json server
-$ yarn db
-
-```
-
-```bash
 # install dependencies
 $ yarn install
+
+# DB - local json server
+# Run db on a different terminal then serve dev 
+$ yarn db
 
 # serve with hot reload at localhost:3000
 $ yarn dev
